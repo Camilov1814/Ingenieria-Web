@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #0c5d6b;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 1s;
+  }
+  
+  .navbar li a:hover {
+    background-color: #ddd; 
+    color: black;
+  }
+
+  .main-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: #fefff9;
+    margin: 10px;
+  }
+
+  .main-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+  }
+
+  .aside-content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: #0c5d6b;
+    
+  }
+
+    .aside-content h1{
+        font-size: 2.5rem;
+        color: #0c5d6b;
+    }
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: #fefff9;
+    border-color: #000;
+}
+
+.section article{
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0c5d6b;
+    color: #fefff9;
+    border-color: #000;
+}
+
+aside button {
+    text-decoration: none;
+    background-color: #0c5d6b;
+    color:#fefff9;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+aside button:hover {
+    background-color: #fefff9;
+    color: #0c5d6b;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes beat {
+  0% {
+      transform: scale(0.95);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+#avoid aside img {
+    animation: beat 4s  infinite;
+    border-radius: 50%;
+}
+
+
